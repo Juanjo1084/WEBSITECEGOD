@@ -1,0 +1,98 @@
+.header {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url(images/header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    animation: fadeInBg 2s ease-in-out forwards;
+}
+
+.header-content {
+    padding: 10px 20px 50px 20px;   
+    margin-top: 70px; 
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+.header h1,
+.header h2,
+.header p {
+    color: white;
+}
+
+.header-content h1 {
+    font-size: 50px;
+}
+
+.header-content h2 {
+    font-size: 40px;
+}
+
+.header-content p {
+    text-align: justify;
+    line-height: 2;
+}
+
+.fade-slide {
+    opacity: 0;
+    transform: translateX(50px);
+    animation: slideIn 0.5s ease-in-out forwards;
+}
+
+.fade-slide a {
+    animation: none;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(1000px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInBg {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    0% {
+      opacity: 0;
+      transform: scale(0.2);
+    }
+  }
+
+@media(max-width:991px) {
+    .header-content h1 {
+        font-size: 20px;
+    }
+
+    .header-content p {
+        line-height: 1.5;
+    }
+
+}
+
+
+

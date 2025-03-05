@@ -1,0 +1,26 @@
+.btn-whats img{
+    width: 100px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 20px;  
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    0% {
+      opacity: 0;
+      transform: scale(0.2);
+    }
+  }
+
+
+@media(max-width:991px) {
+    .btn-whats img{
+        width: 80px;
+    }
+}

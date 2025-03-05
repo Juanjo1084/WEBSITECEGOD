@@ -1,0 +1,82 @@
+a {
+    color: white;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu {
+    width: 1200px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    0% {
+      opacity: 0;
+      transform: scale(0.2);
+    }
+  }
+
+
+.navbar ul{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu .navbar ul li a:hover{
+    color: #CE967B;
+    cursor: pointer;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+
+@media(max-width:991px) {
+    .menu {
+        padding: 30px;
+        width: 100%;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+}
