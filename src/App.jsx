@@ -24,10 +24,9 @@ function App() {
         <>
           <Header />
           <Container />
+          <a className='btn-whats' href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
           <Footer />
-          <div className="btn-whats">
-            <a><img src="./public/images/whatsapp-icon-free-png.webp" alt="WhatsApp"/></a>
-          </div>
+
         </>
       )}
     </>

@@ -1,10 +1,11 @@
-.btn-whats img{
-    width: 100px;
+.btn-whats{
+    font-size: 80px;
     position: fixed;
     bottom: 0;
     right: 0;
-    padding: 20px;  
+    padding: 0 30px;
     animation: fadeIn 2s ease-in-out forwards;
+    color: rgb(80, 148, 25);
 }
 
 @keyframes fadeIn {
@@ -20,7 +21,7 @@
 
 
 @media(max-width:991px) {
-    .btn-whats img{
-        width: 80px;
+    .btn-whats{
+      font-size: 50px;
     }
 }
