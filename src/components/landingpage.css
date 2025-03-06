@@ -1,6 +1,5 @@
 .landing-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -45,6 +44,10 @@
   @media (max-width:991px) {
     .landing-title {
       font-size: 1.8rem;
+    }
+
+    .landing-container {
+      flex-direction: column;
     }
   
     .landing-logo {

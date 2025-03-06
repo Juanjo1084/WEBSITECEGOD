@@ -6,7 +6,7 @@ function Menu({setContent}) {
             <a className='logo' href="#">MI LOGO</a>
             <input type="checkbox" id='menu' />
             <label htmlFor="menu">
-                <img className='menu-icono' src="/src/components/images/menu.png" alt="" />
+                <i class="fa-solid fa-bars"></i>
             </label>
             <nav className="navbar">
             <ul>

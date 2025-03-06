@@ -1,10 +1,14 @@
-a {
+i, a {
     color: white;
 }
 
 .logo {
     font-weight: bold;
     font-size: 20px;
+}
+
+.menu i {
+    font-size: 30px;
 }
 
 .menu {
