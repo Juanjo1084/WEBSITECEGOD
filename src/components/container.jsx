@@ -1,5 +1,5 @@
 import './container.css'
-import Proyects from './proyects'
+import Proyects from './proyects.jsx'
 
 function Container() {
     

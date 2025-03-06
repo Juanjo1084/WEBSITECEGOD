@@ -1,4 +1,4 @@
-import Menu from './menu.jsx'
+import Menu from './Menu.jsx'
 import './header.css'
 import { useState } from 'react';
 function Header() {
