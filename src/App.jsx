@@ -26,7 +26,7 @@ function App() {
           <Container />
           <Footer />
           <div className="btn-whats">
-            <a><img src="/src/components/images/whatsapp-icon-free-png.webp" alt="WhatsApp"/></a>
+            <a><img src="./public/images/whatsapp-icon-free-png.webp" alt="WhatsApp"/></a>
           </div>
         </>
       )}
