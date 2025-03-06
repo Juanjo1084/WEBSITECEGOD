@@ -1,9 +1,9 @@
-.btn-whats{
+.btn-whats i{
     font-size: 80px;
     position: fixed;
     bottom: 0;
     right: 0;
-    padding: 0 30px;
+    padding: 10px 15px;
     animation: fadeIn 2s ease-in-out forwards;
     color: rgb(80, 148, 25);
 }

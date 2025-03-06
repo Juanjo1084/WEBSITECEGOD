@@ -10,7 +10,6 @@ function LandingPage() {
             className="landing-logo"
             />
             <h1 className="landing-title">Bienvenido a CEGOD Ingeniería</h1>
-
         </div>
         </>
     )
