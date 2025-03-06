@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
-import Header from './components/Header'
-import Container from './components/container'
-import LandingPage from './components/landingpage'
-import Footer from './components/footer'
+import Header from './components/Header.jsx'
+import Container from './components/container.jsx'
+import LandingPage from './components/landingpage.jsx'
+import Footer from './components/footer.jsx'
 import './App.css'
 
 function App() {
