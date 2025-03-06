@@ -5,7 +5,6 @@ function LandingPage() {
         <>
         <div className="landing-container">
             <h1 className="landing-title">Bienvenido a CEGOD Ingeniería</h1>
-            <h1 className="landing-title">Prueba</h1>
             {/* <img
             src="./public/images/logo-Photoroom.png"
             alt="CEGOD Ingeniería Logo"
