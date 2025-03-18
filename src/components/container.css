@@ -12,6 +12,7 @@
     text-align: start;
     height: auto;
     align-items: center;
+    padding: 20px;
 }
 
 .main-text p {
@@ -22,6 +23,11 @@
     display: flex;
     justify-content: space-between;
     gap: 30px;
+}
+
+.indicator {
+    border: 1px solid black;
+    margin: 0 20px 20px 20px;
 }
 
 @media(max-width:991px) {

@@ -21,6 +21,10 @@ i, a {
     animation: fadeIn 2s ease-in-out forwards;
 }
 
+.menu img {
+    width: 60px;
+}
+
 @keyframes fadeIn {
     100% {
       opacity: 1;
@@ -69,11 +73,17 @@ i, a {
     }
     .menu .navbar {
         position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
+        top: 70px;
+        right: 10px;
+        left: 10px;
         background-color: #323337;
+        border-radius: 20px;
         display: none;
+    }
+
+    .navbar ul {
+        text-align: center;
+        padding: 20px;
     }
 
     .menu .navbar ul li {

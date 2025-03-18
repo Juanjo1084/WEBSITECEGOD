@@ -1,0 +1,75 @@
+.general {
+    display: flex;
+}
+
+.general-1 {
+    width: 50%;
+    padding: 200px 100px 200px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.general-2 {
+    background-image: url(https://images.pexels.com/photos/834892/pexels-photo-834892.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+.general-3 {
+    background-image: url(https://images.pexels.com/photos/27928761/pexels-photo-27928761/free-photo-of-hombre-tecnologia-poder-energia.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+.general-4 {
+    background-image: url(https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+.general-5 {
+    background-image: url(https://images.pexels.com/photos/6693656/pexels-photo-6693656.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+@media(max-width:991px){
+    .general{
+        flex-direction: column;
+    }
+
+    .general-1{
+        padding: 20px;
+        width: 100%;
+    }
+
+    .general-1 h2 {
+        text-align: center;
+    }
+
+    .general-2,
+    .general-3,
+    .general-4,
+    .general-5 {
+        width: 100%;
+        height: 400px;
+    }
+
+    .general:nth-child(1) .general-1 { order: 2; }
+    .general:nth-child(1) .general-2 { order: 1; }
+
+    .general:nth-child(2) .general-3 { order: 1; }
+    .general:nth-child(2) .general-1 { order: 2; }
+
+    .general:nth-child(3) .general-1 { order: 2; }
+    .general:nth-child(3) .general-4 { order: 1; }
+
+    .general:nth-child(4) .general-5 { order: 1; }
+    .general:nth-child(4) .general-1 { order: 2; }
+
+}
