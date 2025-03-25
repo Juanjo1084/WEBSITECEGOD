@@ -4,11 +4,23 @@
 
 .general-1 {
     width: 50%;
-    padding: 200px 100px 200px 100px;
+    height: 700px;
+    padding: 0 50px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 30px;
 }
+
+.general-1 h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.general-1 p {
+    text-align: center;
+}
+
 .general-2 {
     background-image: url(https://images.pexels.com/photos/834892/pexels-photo-834892.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-position: center center;
@@ -37,6 +49,32 @@
     background-size: cover;
     width: 50%;
 }
+
+.services-caracteristicas ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    align-items: center;
+}
+
+.services-caracteristicas ul li {
+    background-color: rgb(44, 44, 44);
+    padding: 10px 15px;
+    border-radius: 15px;
+    transition: ease-in-out 0.2s;
+}
+
+.services-caracteristicas ul li:hover {
+    box-shadow: 0 5px 5px 0 rgb(136, 136, 136);
+    transform: scale(1.05);
+}
+
+.services-caracteristicas ul li p {
+    text-align: center;
+    font-size: 15px;
+}
+
 
 @media(max-width:991px){
     .general{

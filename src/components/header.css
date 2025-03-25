@@ -2,11 +2,11 @@
     background-image: linear-gradient(
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)),
-        url(https://i.postimg.cc/BZ1cBBnS/placas-solares-en-empresas.png);
+        url(https://images.pexels.com/photos/46169/twilight-power-lines-evening-evening-sun-46169.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 70vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     opacity: 0;
