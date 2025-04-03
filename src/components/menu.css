@@ -1,96 +1,70 @@
-i, a {
-    color: white;
-}
-
-.logo {
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.menu i {
-    font-size: 30px;
-}
-
 .menu {
-    width: 1200px;
-    position: absolute;
-    top: 0;
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    animation: fadeIn 2s ease-in-out forwards;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    align-items: center;
 }
 
-.menu img {
-    width: 60px;
-}
-
-@keyframes fadeIn {
-    100% {
-      opacity: 1;
-      transform: scale(1);
-    }
-    0% {
-      opacity: 0;
-      transform: scale(0.2);
-    }
-  }
-
-
-.navbar ul{
+.navbar {
     display: flex;
-    gap: 20px;
-    font-size: 20px;
-    font-weight: bold;
+    transition: ease-in-out 0.5s;
 }
 
-.menu .navbar ul li a:hover{
-    color: #CE967B;
+.navbar li {
+    padding: 10px 20px;
+    transition: ease 0.3s;
+}
+
+.navbar li:hover {
+    background-color: rgb(19, 19, 19);
+    border-radius: 10px;
+}
+
+.navbar li a {
+    color: white;
     cursor: pointer;
+    font-size: 18px;
+    transition: ease 0.3s;
 }
 
-#menu {
+.navbar li:hover  a{
+    color: rgb(131, 131, 131);
+}
+
+
+.menu i {
+    color: white;
+    font-size: 30px;
+}
+
+.menu button {
     display: none;
 }
 
-.menu-icono {
-    width: 25px;
-}
-
-.menu label {
-    cursor: pointer;
-    display: none;
-}
-
-
-@media(max-width:991px) {
-    .menu {
-        padding: 30px;
-        width: 100%;
+@media(max-width:991px){
+    .menu button {
+        display: flex;
+        justify-content: end;
     }
-    .menu label {
-        display: initial;
-    }
-    .menu .navbar {
+
+    .navbar {
         position: absolute;
-        top: 70px;
-        right: 10px;
-        left: 10px;
-        background-color: #323337;
-        border-radius: 20px;
-        display: none;
-    }
-
-    .navbar ul {
-        text-align: center;
+        flex-direction: column;
+        top: 80%;
+        right: 60px;
+        background-color: rgba(255, 255, 255, 0.322);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
         padding: 20px;
+        align-items: center;
+        justify-content: center;
     }
 
-    .menu .navbar ul li {
-        width: 100%;
-    }
-
-    #menu:checked ~ .navbar {
-        display: initial;
+    .navbar.show {
+        display: flex;
     }
 }
+

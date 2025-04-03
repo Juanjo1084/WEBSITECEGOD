@@ -5,7 +5,7 @@ import '../styles/choose.css'
 
 const Choose = () => {
   const { ref, inView } = useInView({
-    threshold: 0.1, // Se activa cuando el 20% del componente es visible
+    threshold: 0.05, // 
   });
 
   const [visible, setVisible] = useState(false);

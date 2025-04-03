@@ -2,11 +2,11 @@
     background-image: linear-gradient(
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)),
-        url(https://images.pexels.com/photos/46169/twilight-power-lines-evening-evening-sun-46169.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    background-position: center;
+        url(https://images.pexels.com/photos/157827/pexels-photo-157827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    height: 800px;
     display: flex;
     align-items: center;
     opacity: 0;
