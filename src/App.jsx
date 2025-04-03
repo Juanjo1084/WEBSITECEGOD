@@ -24,7 +24,7 @@ function App() {
         <>
           <Header />
           <Container />
-          <a className='btn-whats' href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+          <a className='btn-whats' href="https://wa.me/573226006394"><i class="fa-brands fa-square-whatsapp"></i></a>
           <Footer />
 
         </>

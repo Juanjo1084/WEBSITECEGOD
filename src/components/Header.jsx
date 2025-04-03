@@ -33,7 +33,7 @@ const sections = {
                         <h1>{sections[content].subtitle}</h1>
                         <p>{sections[content].text}</p>
                     </div>
-                    <a href="#" className="btn-1">Quieres saber más</a>
+                    <a href="" className="btn-1">Quieres saber más</a>
                 </div>
             </div>
         </div>
