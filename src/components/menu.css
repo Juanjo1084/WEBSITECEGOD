@@ -55,14 +55,19 @@
         flex-direction: column;
         top: 80%;
         right: 60px;
-        background-color: rgba(255, 255, 255, 0.322);
+        background-color: rgba(255, 255, 255, 0.616);
         backdrop-filter: blur(10px);
         border-radius: 10px;
         padding: 20px;
         align-items: center;
         justify-content: center;
+        z-index: 10;
     }
 
+    .navbar li a{
+        color: black;
+    }
+    
     .navbar.show {
         display: flex;
     }
