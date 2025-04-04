@@ -2,7 +2,7 @@
     background-image: linear-gradient(
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)),
-        url(https://images.pexels.com/photos/157827/pexels-photo-157827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        url(https://i.postimg.cc/rpNGVNKs/freepik-the-style-is-candid-image-photography-with-natural-48096.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,6 +46,10 @@
     opacity: 0;
     transform: translateX(50px);
     animation: slideIn 0.5s ease-in-out forwards;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
 }
 
 .fade-slide a {

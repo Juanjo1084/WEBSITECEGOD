@@ -1,6 +1,7 @@
 import './container.css'
 import Proyects from './proyects.jsx'
 import Choose from './choose.jsx'
+import YoutubeVideo from './youtube.jsx'
 
 function Container() {
 
@@ -27,8 +28,8 @@ function Container() {
         <section className="main">
             <div className='main-text'>
                 <h2>¿Quiénes Somos?</h2>
-                <video src=""></video>
             </div>
+            <YoutubeVideo />
             <div className='main-text'>
                 <h2>Experiencia Prevía</h2>
                 <p>Contamos con experiencia en varios tipos de vivienda, desde interes independiente hasta servicio publico, aquí tienes un poco de nuestra experiencia en campo.</p>

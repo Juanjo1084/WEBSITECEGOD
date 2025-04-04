@@ -10,7 +10,7 @@ const navigate = useNavigate();
 const sections = {
     inicio: {
         title: "Bienvenidos",
-        subtitle: "En nuestra empresa",
+        subtitle: "Sobre CEGOD Ingenierías",
         text: "Nos especializamos en el diseño de sistemas eléctricos para distintos tipos de residencias, garantizando seguridad, eficiencia y cumplimiento con normativas como el RETIE y el RETILAP. Con aproximadamente un año en el mercado, ofrecemos precios accesibles sin comprometer la calidad. Nos enfocamos en brindar soluciones adaptadas a las necesidades de cada cliente, utilizando herramientas avanzadas y aplicando las mejores prácticas del sector. Nuestro compromiso es diseñar instalaciones confiables y seguras, optimizando recursos y asegurando un servicio profesional y personalizado.",
         link: "¿Quiénes somos?",
         rute: "/",
@@ -37,8 +37,8 @@ const sections = {
             <div className="container">
                 <div className='header-content'>
                     <div key={content} className="fade-slide">
-                        <h2>{sections[content].title}</h2>
-                        <h1>{sections[content].subtitle}</h1>
+                        <h1>{sections[content].title}</h1>
+                        <h2>{sections[content].subtitle}</h2>
                         <p>{sections[content].text}</p>
                         <button className='navigate' onClick={() => {window.scrollTo(0, 0); navigate(sections[content].rute)}}>{sections[content].link}</button>
                     </div>
