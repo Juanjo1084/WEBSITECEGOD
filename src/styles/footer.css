@@ -3,7 +3,6 @@ a {
 }
 
 .footer {
-  margin: 100px 0 0 0;
   padding: 50px 0;
   background-color: #1f1f1f;
   display: flex;
@@ -19,7 +18,7 @@ a {
   gap: 20px;
 }
 
-.footer-info ul {
+.footer-info{
   display: flex;
   gap: 20px;
 }
@@ -28,8 +27,9 @@ a {
   color: white;
 }
 
-.indicador {
-  width: 90vh;
+.indicador-footer {
+  width: 100%;
+  margin: 0 auto;
   border: 1px white solid;
 }
 

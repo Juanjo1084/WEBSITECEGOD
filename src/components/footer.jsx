@@ -34,17 +34,15 @@ function Footer() {
               </div>
             </ul>
           </div>
-          <div className="indicador"></div>
-          <div className="footer-info">
-            <ul>
-              <li>
-                <a href="">Terminos y condiciones</a>
-              </li>
-              <li>
-                <a href="">Politica de Privacidad</a>
-              </li>
-            </ul>
-          </div>
+          <div className="indicador-footer"></div>
+          <ul className="footer-info">
+            <li>
+              <a href="">Terminos y condiciones</a>
+            </li>
+            <li>
+              <a href="">Politica de Privacidad</a>
+            </li>
+          </ul>
           <p>©CEGODINGENIERIAS | Todos los derechos reservados</p>
         </div>
       </footer>
