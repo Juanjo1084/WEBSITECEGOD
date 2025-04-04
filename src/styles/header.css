@@ -4,7 +4,7 @@
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 800px;
+  height: 100vh;
   display: flex;
   align-items: center;
   opacity: 0;
@@ -121,10 +121,19 @@
 
 @media (max-width: 991px) {
   .header-content h1 {
+    font-size: 25px;
+  }
+
+  .header-content h2 {
     font-size: 20px;
   }
 
   .header-content p {
     line-height: 1.5;
   }
+
+  .fade-slide {
+    gap: 10px;
+  }
+
 }

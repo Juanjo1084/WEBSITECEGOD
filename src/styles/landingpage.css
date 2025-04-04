@@ -1,44 +1,37 @@
 .landing-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   text-align: center;
-  overflow: hidden;
+  background-color: white;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.landing-container.fade-out {
+  opacity: 0;
 }
 
 .landing-title {
-  font-size: 50px;
+  font-size: 70px;
   font-weight: bold;
-  color: rgb(34, 34, 34);
-  animation: zoomDownFadeOut 4.5s ease-in-out forwards;
+  color: black;
 }
 
-@keyframes zoomDownFadeOut {
-  0% {
-    opacity: 0;
-    transform: scale(2);
-  }
-  30% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(1);
-  }
+.landing-subtitle {
+  font-size: 40px;
+  color: gray;
+  margin-top: 10px;
 }
 
-@media (max-width: 991px) {
+@media(max-width:991px){
   .landing-title {
-    font-size: 1.8rem;
+    font-size: 50px;
   }
 
-  .landing-container {
-    flex-direction: column;
-  }
-
-  .landing-logo {
-    width: 200px;
+  .landing-subtitle {
+    font-size: 30px;
   }
 }

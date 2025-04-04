@@ -81,16 +81,17 @@
     align-items: center;
     justify-content: center;
     z-index: 10;
+    gap: 20px;
   }
 
   .navbar li a {
     color: black;
-    font-size: 30px;
+    font-size: 20px;
   }
 
-.navbar li a::after {
-  top: 40px;
-}
+  .navbar li a::after {
+    top: 40px;
+  }
 
   .navbar.show {
     display: flex;
