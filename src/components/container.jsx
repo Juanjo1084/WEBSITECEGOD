@@ -1,6 +1,5 @@
 import './container.css'
 import Proyects from './proyects.jsx'
-import Services from './services.jsx'
 import Choose from './choose.jsx'
 
 function Container() {
@@ -27,15 +26,12 @@ function Container() {
         <>
         <section className="main">
             <div className='main-text'>
-                <h2>Servicios</h2>
-            </div>
-            <div className='indicator'></div>
-            <div className='services'>
-                <Services />
+                <h2>¿Quiénes Somos?</h2>
+                <video src=""></video>
             </div>
             <div className='main-text'>
-                    <h2>Experiencia Prevía</h2>
-                    <p>Contamos con experiencia en varios tipos de vivienda, desde interes independiente hasta servicio publico, aquí tienes un poco de nuestra experiencia en campo.</p>
+                <h2>Experiencia Prevía</h2>
+                <p>Contamos con experiencia en varios tipos de vivienda, desde interes independiente hasta servicio publico, aquí tienes un poco de nuestra experiencia en campo.</p>
             </div>
                 <div className='proyectos'>
                     <Proyects projects={projectsData} />

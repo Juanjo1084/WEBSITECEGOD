@@ -1,7 +1,7 @@
 .menu {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 20px 20px 40px;
     position: absolute;
     top: 0;
     width: 100%;
@@ -40,12 +40,12 @@
     font-size: 30px;
 }
 
-.menu button {
+.icon-menu {
     display: none;
 }
 
 @media(max-width:991px){
-    .menu button {
+    .icon-menu {
         display: flex;
         justify-content: end;
     }

@@ -1,33 +1,37 @@
 import './menu.css';
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Menu({ setContent }) {
-    const [isOpen, setIsOpen] = useState(false);
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 991);
+const [isOpen, setIsOpen] = useState(false);
+const [isMobile, setIsMobile] = useState(window.innerWidth <= 991);
+const navigate = useNavigate();
 
-    function handleMenu() {
-        setIsOpen(!isOpen);
+function handleMenu() {
+    setIsOpen(!isOpen);
+}
+
+useEffect(() => {
+    function handleResize() {
+        setIsMobile(window.innerWidth <= 991);
+        if (window.innerWidth > 991) {
+            setIsOpen(true); 
+        }
     }
 
-    useEffect(() => {
-        function handleResize() {
-            setIsMobile(window.innerWidth <= 991);
-            if (window.innerWidth > 991) {
-                setIsOpen(true); 
-            }
-        }
+    window.addEventListener("resize", handleResize);
+    handleResize(); 
 
-        window.addEventListener("resize", handleResize);
-        handleResize(); 
-
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
+    return () => window.removeEventListener("resize", handleResize);
+}, []);
 
     return (
         <div className="menu">
-            <i className="fa-solid fa-helmet-safety"></i>
+            <button onClick={() => {window.scrollTo(0, 0); navigate("/")}}>
+                <i className="fa-solid fa-helmet-safety"></i>
+            </button>
             {isMobile && (
-                <button onClick={handleMenu}>
+                <button className='icon-menu' onClick={handleMenu}>
                     <i className="fa-solid fa-bars"></i>
                 </button>
             )}
