@@ -66,16 +66,17 @@
   .icon-menu {
     display: flex;
     justify-content: end;
+    z-index: 10;
   }
 
   .navbar {
     position: absolute;
     flex-direction: column;
     top: 80%;
-    right: 60px;
+    right: 0;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.616);
     backdrop-filter: blur(10px);
-    border-radius: 10px;
     padding: 20px;
     align-items: center;
     justify-content: center;
@@ -84,7 +85,12 @@
 
   .navbar li a {
     color: black;
+    font-size: 30px;
   }
+
+.navbar li a::after {
+  top: 40px;
+}
 
   .navbar.show {
     display: flex;
