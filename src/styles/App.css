@@ -1,0 +1,26 @@
+.btn-whats i {
+  font-size: 50px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px 15px;
+  animation: fadeIn 2s ease-in-out forwards;
+  color: rgb(80, 148, 25);
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  0% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+}
+
+@media (max-width: 991px) {
+  .btn-whats {
+    font-size: 50px;
+  }
+}

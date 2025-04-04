@@ -1,0 +1,44 @@
+.landing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+.landing-title {
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(34, 34, 34);
+  animation: zoomDownFadeOut 4.5s ease-in-out forwards;
+}
+
+@keyframes zoomDownFadeOut {
+  0% {
+    opacity: 0;
+    transform: scale(2);
+  }
+  30% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 991px) {
+  .landing-title {
+    font-size: 1.8rem;
+  }
+
+  .landing-container {
+    flex-direction: column;
+  }
+
+  .landing-logo {
+    width: 200px;
+  }
+}

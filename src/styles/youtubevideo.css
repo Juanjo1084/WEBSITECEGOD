@@ -1,43 +1,42 @@
 .youtube-container {
-    position: relative;
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .youtube-container iframe {
-    width: 100%;
-    height: 675px;
-    border: none;
-  }
-  
-  .mute-button {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    background-color: rgb(37, 37, 37);
-    border: none;
-    font-size: 24px;
-    padding: 8px 12px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-  }
-  
-  .mute-button:hover {
-    background-color: #f0f0f0;
-  }
-  
-@media (max-width: 991px) {
-    .youtube-container iframe {
-      height: 200px;
-    }
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
 
-    .mute-button {
-      font-size: 16px;
-      padding: 6px 10px;
-    }
+.youtube-container iframe {
+  width: 100%;
+  height: 675px;
+  border: none;
+}
+
+.mute-button {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background-color: rgb(37, 37, 37);
+  border: none;
+  font-size: 24px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mute-button:hover {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 991px) {
+  .youtube-container iframe {
+    height: 200px;
   }
-  
+
+  .mute-button {
+    font-size: 16px;
+    padding: 6px 10px;
+  }
+}

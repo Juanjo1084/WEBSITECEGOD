@@ -1,0 +1,44 @@
+.consultation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.consultation-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.consultation-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+.consultation-description {
+    font-size: 20px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.consultation-description ul {
+    padding-left: 40px;
+}
+
+.consultation-description li {
+    list-style: disc;
+    margin-bottom: 10px;
+}
+
+.important-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}

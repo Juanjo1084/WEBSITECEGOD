@@ -1,5 +1,5 @@
+import "../styles/choose.css";
 import { motion } from "framer-motion";
-import '../styles/choose.css';
 
 const Choose = () => {
   return (
@@ -12,13 +12,13 @@ const Choose = () => {
         className="choose-container"
       >
         <h2 className="choose-title">¿Por qué elegirnos?</h2>
-        
+
         <motion.ul
           className="choose-list"
           initial="hidden"
           whileInView="visible"
           variants={{
-            visible: { transition: { staggerChildren: 0.3 } }
+            visible: { transition: { staggerChildren: 0.3 } },
           }}
           viewport={{ once: false }}
         >
@@ -26,17 +26,19 @@ const Choose = () => {
             "Experiencia y profesionalismo: Contamos con un equipo de ingenieros altamente capacitados y con amplia trayectoria en el sector.",
             "Calidad garantizada: Utilizamos materiales certificados y cumplimos con todas las normativas vigentes.",
             "Compromiso con el cliente: Diseñamos soluciones personalizadas y brindamos acompañamiento en cada etapa del proyecto.",
-            "Eficiencia y cumplimiento: Nos aseguramos de entregar proyectos en tiempo y forma, optimizando recursos y garantizando los mejores resultados."
+            "Eficiencia y cumplimiento: Nos aseguramos de entregar proyectos en tiempo y forma, optimizando recursos y garantizando los mejores resultados.",
           ].map((text, index) => (
             <motion.li
               key={index}
               variants={{
                 hidden: { opacity: 0, y: 50 },
-                visible: { opacity: 1, y: 0 }
+                visible: { opacity: 1, y: 0 },
               }}
               transition={{ duration: 0.5, ease: "easeOut" }}
             >
-              <p><strong>{text.split(":")[0]}:</strong> {text.split(":")[1]}</p>
+              <p>
+                <strong>{text.split(":")[0]}:</strong> {text.split(":")[1]}
+              </p>
             </motion.li>
           ))}
         </motion.ul>
@@ -58,5 +60,3 @@ const Choose = () => {
 };
 
 export default Choose;
-
-

@@ -1,0 +1,60 @@
+.quote-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgb(17, 17, 17);
+  border-radius: 12px;
+}
+
+.quote-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.quote-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.quote-container label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
+
+.quote-container input,
+.quote-container select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 5px;
+  font-size: 20px;
+  background-color: rgb(204, 195, 255);
+}
+
+.quote-container button {
+  padding: 12px;
+  background-color: #2d89ef;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: ease 0.3s;
+}
+
+.quote-container button:hover {
+  background-color: #1b5fad;
+}
+
+.quote-result {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
