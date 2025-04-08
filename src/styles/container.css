@@ -23,14 +23,13 @@
 
 .proyectos {
   display: flex;
-  justify-content: space-between;
-  gap: 30px;
+  flex-direction: column;
+  align-items: center;
 }
 
-.indicator {
-  border: 1px solid black;
-  width: 90%;
-  margin: 20px 50px;
+.message-proyects {
+  color: red;
+  font-weight: 600;
 }
 
 @media (max-width: 991px) {

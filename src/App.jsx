@@ -28,7 +28,7 @@ useEffect(() => {
         <>
         <Header />
         <Routes>
-          <Route path="/" element={<Container />} />
+          <Route path="/aboutus" element={<Container />} />
           <Route path="/services" element={<Services />} />
           <Route path="/consultation" element={<Consultation />} />
         </Routes>

@@ -11,9 +11,9 @@ function Header() {
     inicio: {
       title: "Bienvenidos",
       subtitle: "Sobre CEGOD Ingenierías",
-      text: "Nos especializamos en el diseño de sistemas eléctricos para distintos tipos de residencias, garantizando seguridad, eficiencia y cumplimiento con normativas como el RETIE y el RETILAP. Con aproximadamente un año en el mercado, ofrecemos precios accesibles sin comprometer la calidad. Nos enfocamos en brindar soluciones adaptadas a las necesidades de cada cliente, utilizando herramientas avanzadas y aplicando las mejores prácticas del sector. Nuestro compromiso es diseñar instalaciones confiables y seguras, optimizando recursos y asegurando un servicio profesional y personalizado.",
+      text: "En CEGOD (Compañía Energética Orientada al Desarrollo), nos especializamos en el diseño de sistemas eléctricos para distintos tipos de residencias, garantizando seguridad, eficiencia y cumplimiento con normativas como el RETIE y el RETILAP. Con aproximadamente un año en el mercado, ofrecemos precios accesibles sin comprometer la calidad. Nos enfocamos en brindar soluciones adaptadas a las necesidades de cada cliente, utilizando herramientas avanzadas y aplicando las mejores prácticas del sector. Nuestro compromiso es diseñar instalaciones confiables y seguras, optimizando recursos y asegurando un servicio profesional y personalizado.",
       link: "¿Quiénes somos?",
-      rute: "/",
+      rute: "/aboutus",
     },
     servicios: {
       title: "",

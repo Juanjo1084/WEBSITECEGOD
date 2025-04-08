@@ -8,7 +8,7 @@ function LandingPage() {
 
   const texts = [
     "Bienvenido a CEGOD Ingeniería",
-    "Soluciones optimas para la industria eléctrica",
+    "Soluciones óptimas para la Industria Eléctrica",
   ];
 
   useEffect(() => {

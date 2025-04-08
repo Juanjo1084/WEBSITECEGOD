@@ -2,13 +2,22 @@ import "../styles/proyects.css";
 import { useState } from "react";
 
 function Proyects({ projects }) {
-  const [selected, setSelected] = useState("Vivienda I");
+  const [selected, setSelected] = useState("Cabaña");
 
   return (
     <div className="proyects-main">
       <div className="projects-container">
         <div className="options">
-          {["Vivienda I", "Vivienda II", "Vivienda III"].map((option) => (
+          {[
+            "Cabaña",
+            "Cafetería",
+            "Apartamento Residencial",
+            "Casa Residencial",
+            "Local Comercial",
+            "Proyecto Conexión BT",
+            "Estudio de localización/Conexión",
+            "Cotización de Materiales",
+          ].map((option) => (
             <div
               key={option}
               className={`option ${selected === option ? "selected" : ""}`}
