@@ -1,4 +1,6 @@
 import "../styles/footer.css";
+import ModalPrivacy from "./modalprivacy";
+import ModalTerms from "./modalterms";
 
 function Footer() {
   return (
@@ -35,14 +37,10 @@ function Footer() {
             </ul>
           </div>
           <div className="indicador-footer"></div>
-          <ul className="footer-info">
-            <li>
-              <a href="">Terminos y condiciones</a>
-            </li>
-            <li>
-              <a href="">Politica de Privacidad</a>
-            </li>
-          </ul>
+          <div className="footer-info">
+            <ModalTerms />
+            <ModalPrivacy />
+          </div>
           <p>©CEGODINGENIERIAS | Todos los derechos reservados</p>
         </div>
       </footer>

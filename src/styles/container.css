@@ -9,8 +9,9 @@
 .main-text {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   max-width: 1200px;
+  gap: 20px;
 }
 
 .main-text h2 {

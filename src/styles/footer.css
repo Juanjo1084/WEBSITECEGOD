@@ -60,6 +60,7 @@
 
 .footer a {
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .footer a:hover {
