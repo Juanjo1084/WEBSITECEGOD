@@ -7,7 +7,7 @@ function LandingPage() {
   const [fadeOut, setFadeOut] = useState(false);
 
   const texts = [
-    "Bienvenido a CEGOD Ingeniería",
+    "Bienvenido a CEGOD Ingenierías",
     "Soluciones óptimas para la Industria Eléctrica",
   ];
 

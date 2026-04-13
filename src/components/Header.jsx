@@ -22,12 +22,26 @@ function Header() {
       link: "Conoce nuestros servicios",
       rute: "/services",
     },
-    contacto: {
+    proyectos: {
+      title: "",
+      subtitle: "Nuestros proyectos",
+      text: "Conoce algunos de los proyectos en los que hemos trabajado, enfocados en diseño eléctrico, energías renovables y soluciones eficientes adaptadas a cada necesidad.",
+      link: "Ver nuestros proyectos",
+      rute: "/projects",
+    },
+    cotizacion: {
       title: "",
       subtitle: "Estamos listos para ayudarte",
       text: "Si está interesado en nuestros servicios, es importante tener en cuenta que la disponibilidad del proyecto dependerá de los requerimientos específicos y la complejidad del diseño. El costo varía según el área a intervenir, los estudios previos necesarios y la cantidad de información disponible. Para ofrecerle una cotización precisa y ajustada a sus necesidades, evaluamos cada caso de manera detallada, garantizando una solución eficiente y conforme a la normativa vigente.",
       link: "Realiza tus propías cotizaciones",
       rute: "/consultation",
+    },
+    contacto: {
+      title: "",
+      subtitle: "Contáctanos",
+      text: "Estamos disponibles para asesorarte en tus proyectos eléctricos. Ponte en contacto con nosotros y recibe atención personalizada según tus requerimientos.",
+      link: "Hablar con nosotros",
+      rute: "/contacts",
     },
   };
 
@@ -43,7 +57,7 @@ function Header() {
             <button
               className="navigate"
               onClick={() => {
-                window.scrollTo(0, 0);
+                window.scrollTo(0,800);
                 navigate(sections[content].rute);
               }}
             >

@@ -86,6 +86,30 @@ function Menu({ setContent }) {
           </li>
           <li>
             <a
+              className={activeLink === "proyectos" ? "active" : ""}
+              onClick={() => {
+                setContent("proyectos");
+                setActiveLink("proyectos");
+                closeMenu();
+              }}
+            >
+              Proyectos
+            </a>
+          </li>
+          <li>
+            <a
+              className={activeLink === "cotizacion" ? "active" : ""}
+              onClick={() => {
+                setContent("cotizacion");
+                setActiveLink("cotizacion");
+                closeMenu();
+              }}
+            >
+              Cotizaciones
+            </a>
+          </li>
+          <li>
+            <a
               className={activeLink === "contacto" ? "active" : ""}
               onClick={() => {
                 setContent("contacto");
@@ -93,7 +117,7 @@ function Menu({ setContent }) {
                 closeMenu();
               }}
             >
-              Información
+              Contacto
             </a>
           </li>
         </ul>
