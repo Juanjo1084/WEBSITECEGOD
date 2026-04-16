@@ -33,6 +33,12 @@ function Footer() {
                 >
                   <i class="fa-brands fa-tiktok "></i>
                 </a>
+                <a
+                  target="_blank"
+                  href="www.linkedin.com/in/cegod-ingenierías-6695b5401"
+                >
+                  <i class="fa-brands fa-linkedin "></i>
+                </a>
               </div>
             </ul>
           </div>

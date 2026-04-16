@@ -1,119 +1,114 @@
-import React from "react";
-import Proyects from "./proyects.jsx";
 import "../styles/projects.css";
 import { useState } from "react";
 
 const projectsData = [
   {
     id: 1,
-    name: "Nombre del proyecto",
-    image: "https://i.postimg.cc/Fz8k7BZS/Captura-de-pantalla-2026-04-12-212919.png",
-    description: "Descripción breve del proyecto, tipo, alcance, etc.",
-    location: "Colombia",
-    date: "2025",
-    capacity: "20 MW"
+    name: "Reubicación Red MT",
+    image: "https://i.postimg.cc/cHDdf39J/1.jpg",
+    description: "Construcción para la reubicación de red eléctrica de media tensión, incluyendo adecuación de infraestructura y cumplimiento de normativas técnicas vigentes.",
+    location: "Puerto Caicedo, Putumayo, Colombia",
+    date: "03 / 2023",
+    capacity: "Media Tensión"
   },
   {
     id: 2,
-    name: "Otro proyecto",
-    image: "https://i.postimg.cc/nrg9CPkD/Captura-de-pantalla-2026-04-12-213117.png",
-    description: "Descripción del proyecto.",
-    location: "Perú",
-    date: "2024",
-    capacity: "10 MW"
+    name: "Diseño Eléctrico Residencial",
+    image: "https://i.postimg.cc/MTsz1BPT/2.jpg",
+    description: "Diseño eléctrico de tomacorrientes e iluminación para vivienda residencial, garantizando seguridad, eficiencia y cumplimiento normativo.",
+    location: "Sibundoy, Putumayo, Colombia",
+    date: "06 / 2023",
+    capacity: "Residencial"
   },
   {
-    id: 2,
-    name: "Otro proyecto",
-    image: "https://i.postimg.cc/RhyJNDR3/Captura-de-pantalla-2026-04-12-213209.png",
-    description: "Descripción del proyecto.",
-    location: "Perú",
-    date: "2024",
-    capacity: "10 MW"
+    id: 3,
+    name: "Edificio Mixto",
+    image: "https://i.postimg.cc/bJ6q1nCw/3.jpg",
+    description: "Diseño eléctrico completo y acometidas para edificio con apartamentos y locales comerciales, incluyendo distribución de cargas y sistemas eléctricos.",
+    location: "Sibundoy, Putumayo, Colombia",
+    date: "12 / 2022",
+    capacity: "Comercial/Residencial"
   },
   {
-    id: 2,
-    name: "Otro proyecto",
-    image: "https://i.postimg.cc/kGzRBpcR/Captura-de-pantalla-2026-04-12-213355.png",
-    description: "Descripción del proyecto.",
-    location: "Perú",
-    date: "2024",
-    capacity: "10 MW"
+    id: 4,
+    name: "Viviendas Interés Social",
+    image: "https://i.postimg.cc/LXymjPC5/4.jpg",
+    description: "Correcciones y ajustes a diseños eléctricos para presentación ante entidad municipal, optimizando cumplimiento técnico y normativo del proyecto.",
+    location: "San Francisco, Putumayo, Colombia",
+    date: "06 / 2024",
+    capacity: "Residencial"
+  },
+  {
+    id: 5,
+    name: "Sistema Riego Automatizado",
+    image: "https://i.postimg.cc/MTsz1BPv/5.jpg",
+    description: "Diseño eléctrico y sistema de control para riego agrícola automatizado, enfocado en eficiencia operativa y optimización de recursos.",
+    location: "Popayán, Cauca, Colombia",
+    date: "09 / 2024",
+    capacity: "Agroindustrial"
+  },
+  {
+    id: 6,
+    name: "Licitación y Ancianato",
+    image: "https://i.postimg.cc/RFPvwtsW/6.jpg",
+    description: "Elaboración y presentación de propuesta técnica en licitación pública para instalaciones eléctricas en centro de atención al adulto mayor.",
+    location: "San Francisco, Putumayo, Colombia",
+    date: "03 / 2023",
+    capacity: "Institucional"
+  },
+  {
+    id: 7,
+    name: "Iluminación Parque Cultural",
+    image: "https://i.postimg.cc/j58Ryfgw/7.jpg",
+    description: "Diseño de sistema de iluminación para parque cultural, integrando criterios de eficiencia energética, seguridad y estética urbana.",
+    location: "Líbano, Tolima, Colombia",
+    date: "05 / 2025",
+    capacity: "Público"
+  },
+  {
+    id: 8,
+    name: "Hospital San Isidro",
+    image: "https://i.postimg.cc/SsZmc9TX/8.jpg",
+    description: "Diseño eléctrico integral incluyendo sistemas UPS, subestación eléctrica (SSEE) y equipos especiales para infraestructura hospitalaria.",
+    location: "Alpujarras, Tolima, Colombia",
+    date: "06 / 2025",
+    capacity: "Hospitalario"
+  },
+  {
+    id: 9,
+    name: "Casa de la Mujer",
+    image: "https://i.postimg.cc/50Pf8z7C/9.jpg",
+    description: "Diseño eléctrico y acometida a transformador para infraestructura institucional, garantizando confiabilidad y cumplimiento RETIE.",
+    location: "Rioblanco, Tolima, Colombia",
+    date: "11 / 2025",
+    capacity: "Institucional"
+  },
+  {
+    id: 10,
+    name: "Parque Solar 25MWp",
+    image: "https://i.postimg.cc/mDdT79XF/10.jpg",
+    description: "Inspección de diseños eléctricos en parque solar fotovoltaico de 25MWp, incluyendo seguimiento de obra y revisión documental técnica.",
+    location: "Ibagué, Tolima, Colombia",
+    date: "05 / 2026",
+    capacity: "Solar - 25 MWp"
   }
-  // 👉 AQUÍ AGREGAS LOS TUYOS
 ];
 
 const Projects = () => {
-    const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState(null);
 
-//   const projectsData = [
-//     {
-//       title: "Cabaña",
-//       description:
-//         "Plano eléctrico adaptado a entornos rurales o naturales, con enfoque en autonomía, eficiencia y seguridad. Considera iluminación ambiental, zonas exteriores.",
-//       image:
-//         "https://i.postimg.cc/kgSM3FhQ/Captura-de-pantalla-2025-04-08-122551.png",
-//     },
-//     {
-//       title: "Cafetería",
-//       description:
-//         "Diseño eléctrico adaptado al uso comercial, considerando zonas de preparación, consumo y equipos industriales. Incluye distribución de cargas, iluminación y puntos especiales.",
-//       image:
-//         "https://i.postimg.cc/50PVDyJL/HOGAR-JESUS-MISERICORDIOSO-1-ELECTRICO-page-0001.jpg",
-//     },
-//     {
-//       title: "Apartamento Residencial",
-//       description:
-//         "Plano eléctrico para unidades habitacionales tipo apartamento. Contempla distribución eficiente de tomas, puntos de luz, y protecciones conforme a la normativa RETIE.",
-//       image: "https://i.postimg.cc/kGBmCCMZ/Plano-A3-1-page-0001.jpg",
-//     },
-//     {
-//       title: "Casa Residencial",
-//       description:
-//         "Diseño completo para viviendas unifamiliares. Se incorporan circuitos independientes, puesta a tierra, y espacios húmedos con sus respectivas protecciones.",
-//       image: "https://i.postimg.cc/j2mrd1Lj/DISE-O-ELECTRICO-E1-page-0001.jpg",
-//     },
-//     {
-//       title: "Local Comercial",
-//       description:
-//         "Diseño pensado para espacios de atención al público, con énfasis en la capacidad instalada, señalización, iluminación comercial y carga de equipos.",
-//       image:
-//         "https://i.postimg.cc/wBR7TRTz/Captura-de-pantalla-2025-04-08-130611.jpg",
-//     },
-//     {
-//       title: "Proyecto Conexión BT",
-//       description:
-//         "Plano para la conexión en baja tensión (BT) desde el punto de acometida hasta el tablero general. Incluye ubicación del medidor y protecciones principales.",
-//       image:
-//         "https://i.postimg.cc/cJMs61W6/Captura-de-pantalla-2025-04-08-123021.png",
-//     },
-//     {
-//       title: "Estudio de localización/Conexión",
-//       description:
-//         "Plano de ubicación del inmueble en su contexto urbano o rural, con trazado del punto de conexión a red pública. Base para trámites ante el operador de red.",
-//       image:
-//         "https://i.postimg.cc/MT6zBkZ5/Captura-de-pantalla-2025-04-08-123149.png",
-//     },
-//     {
-//       title: "Cotización de Materiales",
-//       description:
-//         "Documento en formato Excel que lista los materiales eléctricos requeridos para el proyecto, con cantidades estimadas y referencias comerciales para facilitar la compra.",
-//       image:
-//         "https://i.postimg.cc/nLtFHj66/Captura-de-pantalla-2025-04-08-123332.png",
-//     },
-//   ];
+  // 🔥 Parseo de fecha "MM / YYYY"
+  const parseDate = (dateStr) => {
+    const [month, year] = dateStr.split("/").map((d) => d.trim());
+    return new Date(year, month - 1);
+  };
+
+  // 🔥 Ordenar de más nuevo a más viejo
+  const sortedProjects = [...projectsData].sort((a, b) => {
+    return parseDate(b.date) - parseDate(a.date);
+  });
+
   return (
-    // <div className="projects">
-    //   <h1>Proyectos</h1>
-    //   <p>Esta es la página de proyectos.</p>
-    //   <div className="proyectos">
-    //     <Proyects projects={projectsData} />
-    //     <p className="message-proyects">
-    //       Oprime sobre la imagen para obtener mas información
-    //     </p>
-    //   </div>
-    // </div>
-    <>
     <section className="projects">
       <h2>Proyectos</h2>
       <p>
@@ -121,7 +116,7 @@ const Projects = () => {
       </p>
 
       <div className="projects-grid">
-        {projectsData.map((project) => (
+        {sortedProjects.map((project) => (
           <div
             key={project.id}
             className="project-card"
@@ -167,7 +162,6 @@ const Projects = () => {
         </div>
       )}
     </section>
-    </>
   );
 };
 
