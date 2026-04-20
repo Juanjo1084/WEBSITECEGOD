@@ -45,23 +45,37 @@ export default function Services() {
         <section className="general">
           <div className="general-3"></div>
           <div className="general-1">
-            <h2>Instalaciones eléctricas</h2>
+            <h2>Asesoría técnica</h2>
             <p>
-              Realizamos la implementación y mantenimiento de sistemas
-              eléctricos, asegurando confiabilidad y eficiencia en cada
-              instalación.
+              Brindamos acompañamiento profesional en el desarrollo de proyectos
+              eléctricos, ayudando a tomar decisiones técnicas eficientes,
+              seguras y alineadas con la normativa vigente.
             </p>
-            {/* <a href="#" className="btn-1">Información</a> */}
+
             <div className="services-caracteristicas">
               <ul>
                 <li>
                   <p>
-                    Implementación de redes eléctricas en baja y media tensión.
+                    Revisión y validación de diseños eléctricos conforme a RETIE
+                    y NTC 2050.
                   </p>
                 </li>
                 <li>
                   <p>
-                    Mantenimiento preventivo y correctivo de redes eléctricas.
+                    Optimización de sistemas eléctricos para mejorar eficiencia
+                    y reducir costos.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Acompañamiento técnico en proyectos de energía solar y
+                    conexión a red.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Soporte en selección de equipos y soluciones eléctricas
+                    adecuadas.
                   </p>
                 </li>
               </ul>

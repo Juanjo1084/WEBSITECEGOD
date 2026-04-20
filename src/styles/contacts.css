@@ -71,11 +71,12 @@
 }
 
 /* BOTONES estilo chips */
-.buttons {
+.buttons, .buttons a {
   display: flex;
   justify-content: center;
   gap: 10px;
   flex-wrap: wrap;
+  color: white;
 }
 
 .buttons button {

@@ -7,13 +7,13 @@ const Contacts = () => {
     email: "",
     phone: "",
     service: "",
-    message: ""
+    message: "",
   });
 
   const handleChange = (e) => {
     setForm({
       ...form,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -32,7 +32,7 @@ ${form.message}
     `;
 
     window.location.href = `mailto:cegodingenierias@gmail.com?subject=${encodeURIComponent(
-      subject
+      subject,
     )}&body=${encodeURIComponent(body)}`;
   };
 
@@ -47,34 +47,34 @@ ${form.message}
 
     window.open(
       `https://wa.me/573000000000?text=${encodeURIComponent(text)}`,
-      "_blank"
+      "_blank",
     );
   };
 
   return (
     <section className="contacts">
       <div className="contacts-container">
-        
         <div className="contacts-info">
           <h2>Contáctanos</h2>
           <p>
             En CEGOD Ingenierías estamos listos para ayudarte en el desarrollo
-            de tus proyectos eléctricos, energías renovables y soluciones técnicas.
+            de tus proyectos eléctricos, energías renovables y soluciones
+            técnicas.
           </p>
 
           <div className="info-item">
             <strong>Email:</strong>
-            <span>cegodingenierias@gmail.com</span>
+            <span> cegodingenierias@gmail.com</span>
           </div>
 
           <div className="info-item">
             <strong>Teléfono:</strong>
-            <span>+57 300 000 0000</span>
+            <span> +57 313 457 8141</span>
           </div>
 
           <div className="info-item">
             <strong>Ubicación:</strong>
-            <span>Colombia</span>
+            <span> Colombia</span>
           </div>
 
           <div className="contacts-extra">
@@ -129,7 +129,7 @@ ${form.message}
           <div className="buttons">
             <button type="submit">Enviar por correo</button>
             <button type="button" onClick={handleWhatsApp}>
-              WhatsApp
+              <a className='btn-whats' target='_blank' rel='noopener noreferrer' href="https://wa.me/573134578141">WhatsApp</a>
             </button>
           </div>
         </form>

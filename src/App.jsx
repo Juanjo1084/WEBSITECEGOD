@@ -37,7 +37,7 @@ useEffect(() => {
           <Route path="/contacts" element={<Contacts />} />
         </Routes>
           <Footer />
-          <a className='btn-whats' target='_blank' rel='noopener noreferrer' href="https://wa.me/573226006394"><i class="fa-brands fa-square-whatsapp"></i></a>
+          <a className='btn-whats' target='_blank' rel='noopener noreferrer' href="https://wa.me/573134578141"><i class="fa-brands fa-square-whatsapp"></i></a>
         </>
       )}
     </>

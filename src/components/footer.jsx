@@ -23,7 +23,7 @@ function Footer() {
                 {/* <a href="https://www.instagram.com/juanjo_pabon/"><i class="fa-brands fa-instagram "></i></a> */}
                 <a
                   target="_blank"
-                  href="https://www.facebook.com/profile.php?id=61557623222135"
+                  href="https://www.facebook.com/profile.php?id=61557623222135&locale=es_LA"
                 >
                   <i class="fa-brands fa-facebook "></i>
                 </a>
